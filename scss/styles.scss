@@ -1,0 +1,17 @@
+.wspIcon{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    z-index: 2000;
+    border-radius: 80%;
+}
+
+
+@import 'components/cards';
+@import 'components/portada';
+@import 'components/header';
+@import 'components/offcanvas';
+@import 'bases/variables';
+@import 'bases/lists';

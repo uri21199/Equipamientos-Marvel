@@ -1,0 +1,43 @@
+@import '../bases/variables';
+@import '../bases/lists';
+
+
+.menu{
+    background-color: $bg-color;
+    opacity: $opacity;
+    height: 4.85em;
+
+
+    .ulNav{
+        margin: auto;
+    }
+
+
+    .ulEnlace {
+        color: nth($colores,1);
+        text-decoration: none;
+        text-transform: uppercase;   
+        font-weight: 600;
+    }
+
+
+    .ulLink{
+        padding: $padding;
+    }
+    
+    
+    a:hover{
+        color: nth($colores,2);
+        transition: all .35s;
+    }
+
+
+    @media screen and (max-width: 992px) {
+
+        .ulLink{
+            background-color: $bg-color;
+            text-align: center;
+        }
+    
+    }
+}
