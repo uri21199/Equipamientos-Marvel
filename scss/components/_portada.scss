@@ -111,6 +111,9 @@
     background-image: url(../images/ffaa/ffaa-1.jpg);
     animation: portada2 28s infinite linear;
     @extend %portada;
+    position: sticky;
+    min-height: 100px;
+    
 }
 
 
