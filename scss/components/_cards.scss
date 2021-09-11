@@ -1,156 +1,33 @@
 @import '../bases/variables';
 @import '../bases/lists';
 
-
-/*Cards de Inicio*/
-
-.alcance{
-    width: 100%;
-    min-height: 500px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
+.card{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: .3s;
+    &:hover{
+        transform: translateY(-15px);
+    }
 
     a{
-        color: nth($colores,2);
         text-decoration: none;
+        color: white;
     }
 
+    .cost span{
+        font-weight: bold;
+        font-size: 20px;
+    }
 
-    .alcanceFuerzas{
-        width: 350px;
-        margin: 20px;
-        margin-bottom: 100px;
-        position: relative;
-        top: 20px;
-        border: 1px solid #000;
-        box-shadow: 1px 2px 2px #000;
-        text-align: center;
-        height: 500px;
-        bottom: 25px;
-
+    .compra{
+        background-color: rgba(27, 27, 88, 0.93);
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         &:hover{
-            transform: translate(-5px, -5px);
-            box-shadow: 2px 4px 4px #000;
-            transition: all .2s;
+            opacity: .8;
         }
-
-        
-
-
-        img{
-            width: 100%;
-            height: 40%;
-            object-fit: cover;
-            box-shadow: 0 2px 5px #000;
-        }
-
-        h4{
-            margin-top: 10px;
-            font-weight: 600;
-        }
-
-        p{
-            padding: 0 1rem;
-            font-size: 16px;
-            font-weight: 400;
-        }
+        cursor: pointer;
     }
-}
-
-
-/*Cards de otras sections*/
-
-.cards{
-    width: 100%;
-    min-height: 1000px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto;
-
-    .card{
-        position: relative;
-        width: 320px;
-        height: 420px;
-        background: $bg-color;
-        overflow: hidden;
-        margin: 25px;
-    
-        .img {
-            position: relative;
-            width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding-top: 20px;
-    
-            img{
-                max-width: 70%;
-                transition: .35s;
-                object-fit: cover;
-            }
-        }
-    
-        .content{
-            position: relative;
-            padding: 25px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            z-index: 1;
-    
-    
-            h3{
-                font-size: 18px;
-                color: #fff;
-                font-weight: 500;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-            }
-    
-    
-            .precio {
-                font-size: 24px;
-                color: #fff;
-                font-weight: 500;
-                letter-spacing: 1px;
-            }
-    
-            .comprar{
-                position: relative;
-                top: 0;
-                opacity: 1;
-                padding: 10px 30px;
-                margin-top: 15px;
-                color: #fff;
-                text-decoration: none;
-                background: #424149;
-                border-radius: 30px;
-                text-transform: uppercase;
-                letter-spacing: 1px;
-                font-weight: 600;
-                transition: 0.5s;
-            }
-        }
-    }
-    
-    
-}
-
-.card:hover .content .comprar{
-    color: #424149;
-    background: #fff;
-}
-
-@media screen and (max-width: 992px) {
-
-    
-    .cards div, .alcance div{
-        width: 100vw;
-    }
-
 }

@@ -1,3 +1,11 @@
+@import 'components/cards';
+@import 'components/portada';
+@import 'components/header';
+@import 'components/offcanvas';
+@import 'components/mail';
+@import 'bases/variables';
+@import 'bases/lists';
+
 .wspIcon{
     height: 60px;
     width: 60px;
@@ -8,10 +16,14 @@
     border-radius: 80%;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-@import 'components/cards';
-@import 'components/portada';
-@import 'components/header';
-@import 'components/offcanvas';
-@import 'bases/variables';
-@import 'bases/lists';
+
+body{
+    background: rgba(192, 195, 231, 0.747);
+}
+

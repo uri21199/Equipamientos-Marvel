@@ -1,9 +1,13 @@
 @import '../bases/variables';
 @import '../bases/lists';
 
-/*Extends*/
 
-%portada{
+/*Inicio*/
+
+.portada{
+    height: 83.2vh;
+    background-image: url(../images/index/slide-1.jpg);
+    animation: portada 28s infinite linear;
     position: relative;
     width: 100%;
     background-color: #f5f5f5;
@@ -13,7 +17,9 @@
 }
 
 
-%portadaContent{
+
+.portadaContent{
+
     margin: 0;
     padding: 0;
     width: 100%;
@@ -24,35 +30,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-
-%h1 {
-    margin: 0;
-    padding: 0;
-    padding-bottom: 30px;
-    font-size: 40px;
-    text-align: center;
-}
-
-
-/*Inicio*/
-
-.portada{
-    height: 88vh;
-    background-image: url(../images/index/slide-1.jpg);
-    animation: portada 28s infinite linear;
-    @extend %portada;
-}
-
-
-
-.portadaContent{
-
-    @extend %portadaContent;
 
     h1 {
-        @extend %h1;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 30px;
+        font-size: 40px;
+        text-align: center;
     }
 
     p {
@@ -71,6 +55,14 @@
         &:hover{
             background-color: #fff;
             color: #333;
+        }
+    }
+
+    .botonesContainer{
+        display: flex;
+
+        .botones{
+            margin: 5px;
         }
     }
 }
@@ -103,123 +95,3 @@
     }
 }
 
-
-/*Fuerzas Armadas portada*/
-
-.portada2{
-    height: 50vh;
-    background-image: url(../images/ffaa/ffaa-1.jpg);
-    animation: portada2 28s infinite linear;
-    @extend %portada;
-    position: sticky;
-    min-height: 100px;
-    
-}
-
-
-.portadaContent2{
-
-    @extend %portadaContent;
-
-    h1 {
-        @extend %h1;
-    }
-
-    
-}
-
-
-@keyframes portada2{
-    0%{
-        background-image: url(../images/ffaa/ffaa-1.jpg)
-    }
-    25%{
-        background-image: url(../images/ffaa/ffaa-1.jpg)
-    }
-    26%{
-        background-image: url(../images/ffaa/ffaa-2.jpg)
-    }
-    50%{
-        background-image: url(../images/ffaa/ffaa-2.jpg)
-    }
-    51%{
-        background-image: url(../images/ffaa/ffaa-3.jpg)
-    }
-    75%{
-        background-image: url(../images/ffaa/ffaa-3.jpg)
-    }
-    76%{
-        background-image: url(../images/ffaa/ffaa-4.jpg)
-    }
-    100%{
-        background-image: url(../images/ffaa/ffaa-4.jpg)
-    }
-}
-
-
-/*Fuerzas de Seguridad*/
-
-.ffss{
-    animation: portada3 28s infinite linear;
-}
-
-@keyframes portada3{
-    0%{
-        background-image: url(../images/ffss/ffss-1.jpg)
-    }
-    25%{
-        background-image: url(../images/ffss/ffss-1.jpg)
-    }
-    26%{
-        background-image: url(../images/ffss/ffss-2.jpg)
-    }
-    50%{
-        background-image: url(../images/ffss/ffss-2.jpg)
-    }
-    51%{
-        background-image: url(../images/ffss/ffss-3.jpg)
-    }
-    75%{
-        background-image: url(../images/ffss/ffss-3.jpg)
-    }
-    76%{
-        background-image: url(../images/ffss/ffss-4.jpg)
-    }
-    100%{
-        background-image: url(../images/ffss/ffss-4.jpg)
-    }
-}
-
-
-/*Promociones*/
-
-.portadapromo{
-    animation: portada4 28s infinite linear;
-}
-
-@keyframes portada4{
-    0%{
-        background-image: url(../images/promo/promo-1.jpg)
-    }
-    25%{
-        background-image: url(../images/promo/promo-1.jpg)
-    }
-    26%{
-        background-image: url(../images/promo/promo-2.jpg)
-    }
-    50%{
-        background-image: url(../images/promo/promo-2.jpg)
-    }
-    51%{
-        background-image: url(../images/promo/promo-3.jpg)
-    }
-    75%{
-        background-image: url(../images/promo/promo-3.jpg)
-    }
-    76%{
-        background-image: url(../images/promo/promo-4.jpg)
-    }
-    100%{
-        background-image: url(../images/promo/promo-4.jpg)
-    }
-}

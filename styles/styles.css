@@ -1,140 +1,36 @@
-.wspIcon {
-  height: 60px;
-  width: 60px;
-  position: fixed;
-  right: 30px;
-  bottom: 30px;
-  z-index: 2000;
-  border-radius: 80%;
+.card {
+  border: none;
+  outline: none;
+  background-color: #fff;
+  border-radius: 20px;
+  transition: 0.3s;
 }
-
-/*Cards de Inicio*/
-.alcance {
-  width: 100%;
-  min-height: 500px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
+.card:hover {
+  transform: translateY(-15px);
 }
-.alcance a {
-  color: #000;
+.card a {
   text-decoration: none;
+  color: white;
 }
-.alcance .alcanceFuerzas {
-  width: 350px;
-  margin: 20px;
-  margin-bottom: 100px;
-  position: relative;
-  top: 20px;
-  border: 1px solid #000;
-  box-shadow: 1px 2px 2px #000;
-  text-align: center;
-  height: 500px;
-  bottom: 25px;
+.card .cost span {
+  font-weight: bold;
+  font-size: 20px;
 }
-.alcance .alcanceFuerzas:hover {
-  transform: translate(-5px, -5px);
-  box-shadow: 2px 4px 4px #000;
-  transition: all 0.2s;
+.card .compra {
+  background-color: rgba(27, 27, 88, 0.93);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  cursor: pointer;
 }
-.alcance .alcanceFuerzas img {
-  width: 100%;
-  height: 40%;
-  object-fit: cover;
-  box-shadow: 0 2px 5px #000;
-}
-.alcance .alcanceFuerzas h4 {
-  margin-top: 10px;
-  font-weight: 600;
-}
-.alcance .alcanceFuerzas p {
-  padding: 0 1rem;
-  font-size: 16px;
-  font-weight: 400;
+.card .compra:hover {
+  opacity: 0.8;
 }
 
-/*Cards de otras sections*/
-.cards {
-  width: 100%;
-  min-height: 1000px;
-  margin-bottom: 50px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: auto;
-}
-.cards .card {
-  position: relative;
-  width: 320px;
-  height: 420px;
-  background: rgba(8, 8, 83, 0.93);
-  overflow: hidden;
-  margin: 25px;
-}
-.cards .card .img {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 20px;
-}
-.cards .card .img img {
-  max-width: 70%;
-  transition: 0.35s;
-  object-fit: cover;
-}
-.cards .card .content {
-  position: relative;
-  padding: 25px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  z-index: 1;
-}
-.cards .card .content h3 {
-  font-size: 18px;
-  color: #fff;
-  font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-.cards .card .content .precio {
-  font-size: 24px;
-  color: #fff;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-.cards .card .content .comprar {
-  position: relative;
-  top: 0;
-  opacity: 1;
-  padding: 10px 30px;
-  margin-top: 15px;
-  color: #fff;
-  text-decoration: none;
-  background: #424149;
-  border-radius: 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 600;
-  transition: 0.5s;
-}
-
-.card:hover .content .comprar {
-  color: #424149;
-  background: #fff;
-}
-
-@media screen and (max-width: 992px) {
-  .cards div, .alcance div {
-    width: 100vw;
-  }
-}
-/*Extends*/
-.portada2, .portada {
+/*Inicio*/
+.portada {
+  height: 83.2vh;
+  background-image: url(../images/index/slide-1.jpg);
+  animation: portada 28s infinite linear;
   position: relative;
   width: 100%;
   background-color: #f5f5f5;
@@ -143,7 +39,7 @@
   transition: all 0.1s ease-in-out;
 }
 
-.portadaContent2, .portadaContent {
+.portadaContent {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -155,22 +51,13 @@
   justify-content: center;
   align-items: center;
 }
-
-.portadaContent2 h1, .portadaContent h1 {
+.portadaContent h1 {
   margin: 0;
   padding: 0;
   padding-bottom: 30px;
   font-size: 40px;
   text-align: center;
 }
-
-/*Inicio*/
-.portada {
-  height: 88vh;
-  background-image: url(../images/index/slide-1.jpg);
-  animation: portada 28s infinite linear;
-}
-
 .portadaContent p {
   text-align: center;
   width: 65%;
@@ -187,6 +74,12 @@
 .portadaContent a:hover {
   background-color: #fff;
   color: #333;
+}
+.portadaContent .botonesContainer {
+  display: flex;
+}
+.portadaContent .botonesContainer .botones {
+  margin: 5px;
 }
 
 @keyframes portada {
@@ -213,103 +106,6 @@
   }
   100% {
     background-image: url(../images/index/slide-4.jpg);
-  }
-}
-/*Fuerzas Armadas portada*/
-.portada2 {
-  height: 50vh;
-  background-image: url(../images/ffaa/ffaa-1.jpg);
-  animation: portada2 28s infinite linear;
-  position: sticky;
-  min-height: 100px;
-}
-
-@keyframes portada2 {
-  0% {
-    background-image: url(../images/ffaa/ffaa-1.jpg);
-  }
-  25% {
-    background-image: url(../images/ffaa/ffaa-1.jpg);
-  }
-  26% {
-    background-image: url(../images/ffaa/ffaa-2.jpg);
-  }
-  50% {
-    background-image: url(../images/ffaa/ffaa-2.jpg);
-  }
-  51% {
-    background-image: url(../images/ffaa/ffaa-3.jpg);
-  }
-  75% {
-    background-image: url(../images/ffaa/ffaa-3.jpg);
-  }
-  76% {
-    background-image: url(../images/ffaa/ffaa-4.jpg);
-  }
-  100% {
-    background-image: url(../images/ffaa/ffaa-4.jpg);
-  }
-}
-/*Fuerzas de Seguridad*/
-.ffss {
-  animation: portada3 28s infinite linear;
-}
-
-@keyframes portada3 {
-  0% {
-    background-image: url(../images/ffss/ffss-1.jpg);
-  }
-  25% {
-    background-image: url(../images/ffss/ffss-1.jpg);
-  }
-  26% {
-    background-image: url(../images/ffss/ffss-2.jpg);
-  }
-  50% {
-    background-image: url(../images/ffss/ffss-2.jpg);
-  }
-  51% {
-    background-image: url(../images/ffss/ffss-3.jpg);
-  }
-  75% {
-    background-image: url(../images/ffss/ffss-3.jpg);
-  }
-  76% {
-    background-image: url(../images/ffss/ffss-4.jpg);
-  }
-  100% {
-    background-image: url(../images/ffss/ffss-4.jpg);
-  }
-}
-/*Promociones*/
-.portadapromo {
-  animation: portada4 28s infinite linear;
-}
-
-@keyframes portada4 {
-  0% {
-    background-image: url(../images/promo/promo-1.jpg);
-  }
-  25% {
-    background-image: url(../images/promo/promo-1.jpg);
-  }
-  26% {
-    background-image: url(../images/promo/promo-2.jpg);
-  }
-  50% {
-    background-image: url(../images/promo/promo-2.jpg);
-  }
-  51% {
-    background-image: url(../images/promo/promo-3.jpg);
-  }
-  75% {
-    background-image: url(../images/promo/promo-3.jpg);
-  }
-  76% {
-    background-image: url(../images/promo/promo-4.jpg);
-  }
-  100% {
-    background-image: url(../images/promo/promo-4.jpg);
   }
 }
 .redesSociales {
@@ -369,6 +165,63 @@
 .title__initial {
   text-align: center;
   margin-top: 50px;
+}
+
+form {
+  width: 300px;
+  margin: auto;
+  box-sizing: border-box;
+  margin-top: 20px;
+  border-radius: 7px;
+}
+form h2 {
+  color: #000;
+  text-align: center;
+  margin: 0;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+form input, form textarea {
+  width: 300px;
+  margin-bottom: 20px;
+  padding: 7px;
+  box-sizing: border-box;
+  font-size: 17px;
+  border: 1px solid #000;
+}
+form textarea {
+  min-height: 100px;
+  max-height: 200px;
+  min-width: 100px;
+  max-width: 300px;
+}
+form #boton {
+  background-color: rgba(27, 27, 88, 0.93);
+  color: #fff;
+  padding: 5px;
+}
+form #boton:hover {
+  cursor: pointer;
+}
+
+.wspIcon {
+  height: 60px;
+  width: 60px;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 2000;
+  border-radius: 80%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(192, 195, 231, 0.747);
 }
 
 /*# sourceMappingURL=styles.css.map */
