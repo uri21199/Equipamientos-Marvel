@@ -17,7 +17,7 @@
   font-size: 20px;
 }
 .card .compra {
-  background-color: rgba(27, 27, 88, 0.93);
+  background-color: rgba(17, 17, 22, 0.93);
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   cursor: pointer;
@@ -109,9 +109,7 @@
   }
 }
 .redesSociales {
-  background-color: #3e3e7e;
-  display: flex;
-  justify-content: center;
+  background-color: rgba(19, 19, 22, 0.952);
   height: 1.7em;
 }
 .redesSociales img {
@@ -121,7 +119,7 @@
 }
 
 .menu {
-  background-color: rgba(8, 8, 83, 0.93);
+  background-color: rgba(0, 0, 0, 0.93);
   height: 4.85em;
 }
 .menu .ulNav {
@@ -142,7 +140,7 @@
 }
 @media screen and (max-width: 992px) {
   .menu .ulLink {
-    background-color: rgba(8, 8, 83, 0.93);
+    background-color: rgba(0, 0, 0, 0.93);
     text-align: center;
   }
 }
@@ -214,6 +212,11 @@ form #boton:hover {
   border-radius: 80%;
 }
 
+.footerLogo {
+  width: 75px;
+  height: 75px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -221,7 +224,7 @@ form #boton:hover {
 }
 
 body {
-  background: rgba(192, 195, 231, 0.747);
+  background: rgba(181, 183, 204, 0.747);
 }
 
 /*# sourceMappingURL=styles.css.map */
