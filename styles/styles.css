@@ -202,6 +202,54 @@ form #boton:hover {
   cursor: pointer;
 }
 
+.acercaNos {
+  font-size: 2em;
+  text-align: center;
+  margin: 1em;
+}
+
+.quienesSomos {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  scroll-margin-top: 15ex;
+}
+.quienesSomos .tituloSomos {
+  font-size: 1.6em;
+  margin: 1em;
+}
+.quienesSomos .textoSomos {
+  text-align: center;
+  word-spacing: 1.5px;
+  margin: 5px;
+  margin-bottom: 50px;
+}
+
+.clientesSection {
+  background-color: rgba(0, 0, 0, 0.93);
+  scroll-margin-top: 6ex;
+}
+.clientesSection .cliente {
+  background-color: #fff;
+  box-shadow: 3px 3px 3px #FFBE0F;
+  border-radius: 20px;
+}
+.clientesSection .cliente img {
+  box-shadow: 5px 5px 5px #222020;
+  border-radius: 50%;
+  margin: 3px 0 5px;
+  transition: all 0.5s;
+}
+.clientesSection .cliente p {
+  color: #000;
+  margin: 5px;
+  padding: 2px;
+}
+
+.cliente:hover img {
+  transform: rotate(-10deg);
+}
+
 .wspIcon {
   height: 60px;
   width: 60px;

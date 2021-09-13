@@ -88,12 +88,12 @@
         <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
     </div>
     <div class="offcanvas-body">
-        <form action="">
+        <form enctype="text/plain" action="mailto:uri21199@gmail.com" method="POST">
             <input type="text" name="nombre" placeholder="Nombre">
             <input type="text" name="correo" placeholder="Correo">
             <input type="text" name="teléfono" placeholder="Teléfono">
             <textarea name="mensaje" placeholder="Escriba aquí su mensaje..."></textarea>
-            <input type="button" value="ENVIAR" id="boton">
+            <input type="button" value="ENVIAR" value="send/" id="boton">
         </form>
     </div>
 </div>
@@ -102,7 +102,7 @@
 <!-- Productos -->
 
 
-<div class="container mb-5 mt-5">
+<section class="container mb-5 mt-5">
 
     <div class="row">
 
@@ -216,7 +216,7 @@
 
     </div>
 
-</div>
+</section>
 
 
 <!-- Footer -->
@@ -229,16 +229,15 @@
 
             <ul class="col-md-4 list-unstyled">
                 <li class="font-weight-bold text-uppercase">Atención al cliente</li>
-                <li><a href="#" class="text-reset">Reclamos</a></li>
-                <li><a href="#" class="text-reset">Sugerencias</a></li>
-                <li><a href="#" class="text-reset">Asesoramiento</a></li>
+                <li><a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" class="text-reset">Reclamos</a></li>
+                <li><a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" class="text-reset">Sugerencias</a></li>
+                <li><a type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" class="text-reset">Asesoramiento</a></li>
             </ul>
 
             <ul class="col-md-4 list-unstyled">
                 <li class="font-weight-bold text-uppercase">Sobre nosotros</li>
-                <li><a href="#" class="text-reset">¿Quiénes somos?</a></li>
-                <li><a href="#" class="text-reset">Personal</a></li>
-                <li><a href="#" class="text-reset">Testimonios</a></li>
+                <li><a href="nosotros.html #quienesSomos" class="text-reset" target="_blank">¿Quiénes somos?</a></li>
+                <li><a href="nosotros.html #clientes" class="text-reset" target="_blank">Clientes</a></li>
             </ul>
         </nav>
     </div>
