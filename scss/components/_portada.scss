@@ -67,6 +67,15 @@
     }
 }
 
+@media screen and (max-width: 552px){
+    .portada p{
+        display: none;
+    }
+
+    .botonesContainer a{
+        display: none;
+    }
+}
 
 @keyframes portada{
     0%{

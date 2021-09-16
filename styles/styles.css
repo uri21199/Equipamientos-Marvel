@@ -82,6 +82,15 @@
   margin: 5px;
 }
 
+@media screen and (max-width: 552px) {
+  .portada p {
+    display: none;
+  }
+
+  .botonesContainer a {
+    display: none;
+  }
+}
 @keyframes portada {
   0% {
     background-image: url(../images/index/slide-1.jpg);
@@ -135,7 +144,7 @@
   padding: 0.33em;
 }
 .menu a:hover {
-  color: #000;
+  color: #b9acac;
   transition: all 0.35s;
 }
 @media screen and (max-width: 992px) {
@@ -205,7 +214,7 @@ form #boton:hover {
 .acercaNos {
   font-size: 2em;
   text-align: center;
-  margin: 1em;
+  padding: 1em;
 }
 
 .quienesSomos {
