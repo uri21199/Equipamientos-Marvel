@@ -7,6 +7,17 @@
 @import 'bases/variables';
 @import 'bases/lists';
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: rgba(181, 183, 204, 0.747);
+}
+
 .wspIcon{
     height: 60px;
     width: 60px;
@@ -21,15 +32,3 @@
     width: 75px;
     height: 75px;
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-body{
-    background: rgba(181, 183, 204, 0.747);
-}
-
