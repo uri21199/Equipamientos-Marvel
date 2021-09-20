@@ -238,6 +238,10 @@ form #boton:hover {
   background-color: rgba(0, 0, 0, 0.93);
   scroll-margin-top: 6ex;
 }
+.clientesSection h2 {
+  text-align: center;
+  color: #cec1c1;
+}
 .clientesSection .cliente {
   background-color: #fff;
   box-shadow: 3px 3px 3px #FFBE0F;
