@@ -32,3 +32,16 @@ body{
     width: 75px;
     height: 75px;
 }
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgba(0, 0, 0, 0.93);
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgb(218, 212, 212);
+    border-radius: 15px;
+}

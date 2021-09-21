@@ -288,4 +288,17 @@ body {
   height: 75px;
 }
 
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.93);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #dad4d4;
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=styles.css.map */
